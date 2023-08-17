@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abel's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/abels-portfolio-low-resolution-color-logo-removebg-preview.png" class="logo"></img>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <p class="fild">Software Engineer <i class="fas fa-code" style="color: rgb(43, 228, 10);"></i>   </p>
+                <h1>Hi, I'm <span>Abel</span><br> from Ethiopia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------ABOUT---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" >About Me</h1>
+                    <p>Hi! I'm a software engineer who loves making things simple, even when they're complex. 
+                        I know my way around different tech tools and enjoy solving tricky problems, always keeping users in mind.
+                         I'm great at working with teams and learning new tech stuff.
+                         Check out my portfolio to see projects that show what I can do. Let's team up and make cool things happen!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>React JSX/TSX </span><br>Building React apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Web app Development</li>
+                            <li><span>2022-current</span><br>Internship at  abel development .</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-current</span><br>computer science, st.marry university</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------SERVICES---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" id="services">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>App Development</h2>
+                    <p>App development involves the process of designing, creating, and implementing software
+                         applications that run on
+                         mobile devices such as smartphones and tablets. It's a multidisciplinary field that encompasses 
+                         various stages, 
+                         from conceptualizing an idea to delivering a functional and user-friendly application.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development involves the creation and maintenance of websites, web applications, 
+                        and online platforms that users interact with through web browsers. It's a dynamic field that combines various technologies,
+                         programming languages, 
+                        and design principles to craft compelling digital experiences. Here's a glimpse into the world of web development:</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI (User Interface) and UX (User Experience) design are the cornerstones of creating captivating and user-friendly digital products,
+                         websites, and applications. These disciplines work together to ensure that the visual and interactive elements align with user
+                          needs and expectations.
+                         Here's a glimpse into the world of UI/UX design:</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" >My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/air.jpg" alt="">
+                    <div class="layer">
+                        <h2>Feres Airlines</h2>
+                        <p>Introducing Feres Airlines Web App: Your all-in-one travel companion. Effortlessly book flights, 
+                            manage reservations, get real-time updates, and access exclusive offers. 
+                            Experience seamless travel planning with just a tap. Your journey, simplified.</p>
+                        <a href="https://github.com/Abeladmassu16/Feres-Airlines" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/g.jpg" alt="">
+                    <div class="layer">
+                        <h2>Fitnes Ethiopia</h2>
+                        <p>Welcome to Fitness Ethiopia! Were your partners on the journey to a healthier lifestyle. 
+                        Led by [Your Name], a seasoned fitness expert with 2 years of experience, were here to curate a fitness experience tailored 
+                        uniquely to you. Our approach combines personalized workouts, nutritional insights, and holistic wellness tips. 
+                        Join us at Elevate Fitness and take the first step towards a balanced and vibrant life.</p>
+                        <a href="https://github.com/Abeladmassu16/Employee-Registration-management-System" tar><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/emp.jpg" alt="">
+                    <div class="layer">
+                        <h2>Employee Managment System</h2>
+                        <p>Welcome to our Employee Management System, your ultimate solution for seamless employee administration. 
+                            Our user-friendly platform enables you to effortlessly register, edit, and delete employee records. 
+                            Whether onboarding new team members,
+                             updating details, or handling departures, our system simplifies the process. </p>
+                        <a href="https://github.com/Abeladmassu16/Employee-Registration-management-System" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------CONTACT---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> abeladmassu3097@gmail.com</p>
+                    <a class="call" href="tel:+21913908274"><i style="color: brown;" class="fas fa-phone-square-alt"></i> +251913908274</a>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook" target="_blank"></i></a>
+                        <a href="https://www.t.me/abel3abel" target="_blank"><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.instagram.com/amamen16/#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin" target="_blank"></i></a>
+                        <a href="https://www.github.com/Abeladmassu16   " target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="emailForm" action="myphp.php" method="post">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="submit" class="btn btn3" value="Send Email">
+                    </form>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ 2023. by <i class="fas fa-code"></i>Abel</p>
+        </div>
+    </div>
+
+    <script src="/my.js"></script>
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
