@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="hide">
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/abels-portfolio-low-resolution-color-logo-removebg-preview.png" class="logo"></img>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    </li><!-- ----------<li><a href="#">Home</a>---------- -->
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times"></i>
                 </ul>
-                <div class="menu-button">
-                    <i class="fas fa-bars"></i>
+                <div class="menu-button-container">
+                    <div class="menu-button">
+                        <i class="fas fa-bars"></i>
+                    </div>
                 </div>
+                
                 
             </nav>
             <div class="header-text">
@@ -207,15 +210,32 @@
 
         document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector('.menu-button');
+    const closeButton = document.querySelector('.fas.fa-times');
     const navigationMenu = document.querySelector('nav ul');
+    const navLinks = document.querySelectorAll('nav ul li a'); // Select all navigation links
 
     menuButton.addEventListener('click', function () {
-        navigationMenu.classList.add('show');
+        navigationMenu.classList.toggle('show');
+    });
+
+    closeButton.addEventListener('click', function () {
+        navigationMenu.classList.remove('show');
+    });
+
+    // Close the menu when clicking outside the menu area
+    document.addEventListener('click', function (event) {
+        if (!event.target.closest('nav')) {
+            navigationMenu.classList.remove('show');
+        }
+    });
+
+    // Close the menu when a navigation item is clicked
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            navigationMenu.classList.remove('show');
+        });
     });
 });
-
-
-
 
     </script>
 </body>

@@ -21,6 +21,19 @@ body {
     margin-left: -990px;
 }
 
+.menu-button-container {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu-button {
+    background-color: #161212; /* Background color for the button */
+    border-radius: 50%; /* Round button shape */
+    padding: 10px; /* Padding around the icon */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow for visual separation */
+}
 
 
 
@@ -416,7 +429,10 @@ nav .fas {
 
     .header-text h1 {
         font-size: 30px;
-        color: #f05989;
+        color: #ffffff;
+    }
+    .header-text .fild{
+        font-size: 27px;
     }
 
     nav .fas {
@@ -425,12 +441,12 @@ nav .fas {
     }
 
     nav ul {
-        background: #b54768;
+        background:transparent;
         position: fixed;
         top: 0;
-        width: 100%; /* Corrected value: Set width to 100% */
+        width: 30%; /* Corrected value: Set width to 100% */
         right: 0;
-        height: 100vh;
+        height: 35vh;
         padding-top: 50px;
         transform: translateX(100%); /* Hide the menu by default */
         transition: transform 0.3s ease; /* Smooth animation for showing/hiding */
