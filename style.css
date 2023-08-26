@@ -404,42 +404,6 @@ nav .fas {
     display: none;
 }
 
-/* ----------CSS FOR SMALL SCREEN---------- */
-@media only screen and (max-width: 600px) {
-    #header {
-        background-image: url(images/phone-background.png);
-    }
-
-    .header-text {
-        margin-top: 10%;
-        font-size: 16px;
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fas {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        background: #b54768;
-        position: fixed;
-        top: 0;
-        width: 10;
-        right: 0;
-        height: 100vh;
-        padding-top: 50px;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-}
 
 /* ----------CSS FOR SMALL SCREEN---------- */
 @media only screen and (max-width: 600px) {
@@ -450,7 +414,7 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 40%;
+        margin-top: 110%;
         font-size: 26px;
         margin-left: 40px;
     }
