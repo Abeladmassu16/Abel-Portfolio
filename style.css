@@ -404,28 +404,19 @@ nav .fas {
     display: none;
 }
 
-
 /* ----------CSS FOR SMALL SCREEN---------- */
 @media only screen and (max-width: 600px) {
-
-    /* Adjust the header image and text size for small screens */
     #header {
         background-image: url(images/backg.jpg);
     }
 
     .header-text {
-        margin-top: 120%;
-        font-size: 26px;
-        margin-left: 40px;
+        margin-top: 130%;
+        font-size: 16px;
     }
 
     .header-text h1 {
         font-size: 30px;
-    }
-
-    /* Show the navigation menu on small screens */
-    nav ul {
-        display: none;
     }
 
     nav .fas {
@@ -437,23 +428,16 @@ nav .fas {
         background: #b54768;
         position: fixed;
         top: 0;
-        width: 200px;
-        /* Increased the width to accommodate the menu items */
+        width: 10;
         right: 0;
         height: 100vh;
         padding-top: 50px;
-        transform: translateX(200px);
-        /* Off-canvas menu, initially hidden */
-        transition: transform 0.1s ease-in-out;
-    }
-
-    nav ul.show {
-        transform: translateX(2);
-        /* Show the menu when 'show' class is applied */
     }
 
     nav ul li {
         display: block;
         margin: 25px;
     }
+
 }
+
