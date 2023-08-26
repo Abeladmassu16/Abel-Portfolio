@@ -409,7 +409,6 @@ nav .fas {
     #header {
         background-image: url(images/backg.jpg);
     }
-
     .header-text {
         margin-top: 130%;
         font-size: 16px;
@@ -418,12 +417,10 @@ nav .fas {
     .header-text h1 {
         font-size: 30px;
     }
-
     nav .fas {
         display: block;
         font-size: 25px;
     }
-
     nav ul {
         background: #b54768;
         position: fixed;
@@ -433,7 +430,6 @@ nav .fas {
         height: 100vh;
         padding-top: 50px;
     }
-
     nav ul li {
         display: block;
         margin: 25px;
