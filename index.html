@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <div id="header">
         <div class="container">
@@ -27,8 +26,9 @@
                 <i class="fas fa-bars"></i>
             </nav>
             <div class="header-text">
-                <p class="fild">Software Engineer <i class="fas fa-code" style="color: rgb(43, 228, 10);"></i>   </p>
-                <h1>Hi, I'm <span>Abel</span><br> from Ethiopia</h1>
+                  <h1>Hi, I'm <span>Abel</span><br> from Ethiopia</h1>
+                  <p class="fild">Software Engineer <i class="fas fa-code" style="color: rgb(43, 228, 10);"></i>   </p>
+              
             </div>
         </div>
     </div>
@@ -131,14 +131,14 @@
                     <div class="layer">
                         <h2>Fitnes Ethiopia</h2>
                         <p>Welcome to Fitness Ethiopia! Were your partners on the journey to a healthier lifestyle. 
-                        Led by [Your Name], a seasoned fitness expert with 2 years of experience, were here to curate a fitness experience tailored 
+                        Led by coach, a seasoned fitness expert with 2 years of experience, were here to curate a fitness experience tailored 
                         uniquely to you. Our approach combines personalized workouts, nutritional insights, and holistic wellness tips. 
                         Join us at Elevate Fitness and take the first step towards a balanced and vibrant life.</p>
                         <a href="https://github.com/Abeladmassu16/Employee-Registration-management-System" tar><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/emp.jpg" alt="">
+                    <img src="images/emp.jpg" alt="" class="work">
                     <div class="layer">
                         <h2>Employee Managment System</h2>
                         <p>Welcome to our Employee Management System, your ultimate solution for seamless employee administration. 
@@ -171,7 +171,7 @@
                     <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form id="emailForm" action="myphp.php" method="post">
+                    <form id="emailForm" action="mailto:abeladmassu3097@gmail.com" method="post">
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -187,9 +187,6 @@
             <p>copyright @ 2023. by <i class="fas fa-code"></i>Abel</p>
         </div>
     </div>
-
-    <script src="/my.js"></script>
-
     <script>
         var tabLinks = document.getElementsByClassName('tab-links');
         var tabContents = document.getElementsByClassName('tab-contents');
@@ -206,13 +203,18 @@
         }
 
         // JavaScript for handling the mobile navigation menu
-        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+        document.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function(event) {
+        if (event.target.matches(".fas.fa-bars")) {
             document.querySelector('nav ul').classList.toggle('show');
-        });
+        }
 
-        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+        if (event.target.matches(".fas.fa-times")) {
             document.querySelector('nav ul').classList.remove('show');
-        });
+        }
+    });
+});
+
 
     </script>
 </body>
