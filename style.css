@@ -416,25 +416,33 @@ nav .fas {
 
     .header-text h1 {
         font-size: 30px;
-        color:  #f05989;
+        color: #f05989;
     }
+
     nav .fas {
         display: block;
         font-size: 25px;
     }
+
     nav ul {
         background: #b54768;
         position: fixed;
         top: 0;
-        width: 10;
+        width: 100%; /* Corrected value: Set width to 100% */
         right: 0;
         height: 100vh;
         padding-top: 50px;
+        transform: translateX(100%); /* Hide the menu by default */
+        transition: transform 0.3s ease; /* Smooth animation for showing/hiding */
     }
+
+    nav ul.show {
+        transform: translateX(0); /* Show the menu when the show class is added */
+    }
+
     nav ul li {
         display: block;
         margin: 25px;
     }
-
 }
 
